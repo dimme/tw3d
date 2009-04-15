@@ -1,13 +1,11 @@
 package logic.world;
 
-import view.Mesh;
 
-public class Lake implements WorldObject {
+public class Lake extends WorldObject {
 
 	@Override
-	public Mesh getMesh() {
-		// TODO Auto-generated method stub
-		return null;
+	public String toString() {
+		return "Lake: " + x + ":" + y;
 	}
 
 }

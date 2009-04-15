@@ -1,13 +1,20 @@
 package logic.world;
 
-import view.Mesh;
 
-public class Village implements WorldObject {
+public class Village extends WorldObject {
 
-	@Override
-	public Mesh getMesh() {
-		// TODO Auto-generated method stub
-		return null;
+	public Village(String name, int x, int y, int player, int points, int rank) {
+		super();
+		super.name = name;
+		super.x = x;
+		super.y = y;
+		super.player = player;
+		super.points = points;
+		super.rank = rank;
 	}
 
+	@Override
+	public String toString() {
+		return "Village: " + x + ":" + y + ". Player: " + name;
+	}
 }

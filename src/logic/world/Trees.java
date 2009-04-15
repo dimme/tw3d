@@ -1,13 +1,12 @@
 package logic.world;
 
-import view.Mesh;
 
-public class Trees implements WorldObject {
+public class Trees extends WorldObject {
 
 	@Override
-	public Mesh getMesh() {
-		// TODO Auto-generated method stub
-		return null;
+	public String toString() {
+		return "Trees: " + x + ":" + y;
 	}
+
 
 }

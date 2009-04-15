@@ -1,10 +1,22 @@
 package logic.world;
 
+import java.util.HashMap;
+
 public class World {
-	private WorldObject[][] world;
+	private HashMap<Integer,WorldObject> world;
+
+	public World() {
+		world = new HashMap<Integer,WorldObject>();
+	}
+
+	public void addWorldObject(int id, WorldObject obj) {
+		world.put(id, obj);
+	}
 	
-	public World(WorldObject[][] world) {
-		this.world = world;
+	public void print() {
+		for(int key : world.keySet()) {
+			System.out.println("key-id: "+key+" "+world.get(key));
+		}
 	}
 
 }
